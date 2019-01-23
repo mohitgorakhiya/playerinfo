@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerInfocell" id="KGk-i7-Jjw" customClass="PlayerInfocell" customModule="PlayersInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-wp-tWN">
+                        <rect key="frame" x="8" y="8" width="359" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4I-WA-soz">
+                                <rect key="frame" x="8" y="19" width="125.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qaw-XL-vc5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkS-0M-rE6">
+                                <rect key="frame" x="141.5" y="19" width="209.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="onr-Rf-OkP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.53333333329999999" blue="0.85882352939999995" alpha="0.47757919520547948" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FkS-0M-rE6" firstAttribute="top" secondItem="xLa-wp-tWN" secondAttribute="top" constant="19" id="8Lk-76-wvF"/>
+                            <constraint firstItem="P4I-WA-soz" firstAttribute="top" secondItem="xLa-wp-tWN" secondAttribute="top" constant="19" id="Afd-Ne-DDI"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="P4I-WA-soz" secondAttribute="bottom" constant="19.5" id="Hlr-IN-Sh1"/>
+                            <constraint firstAttribute="trailing" secondItem="FkS-0M-rE6" secondAttribute="trailing" constant="8" id="g4j-bG-WZk"/>
+                            <constraint firstItem="FkS-0M-rE6" firstAttribute="leading" secondItem="P4I-WA-soz" secondAttribute="trailing" constant="8" id="hHD-U4-gd1"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FkS-0M-rE6" secondAttribute="bottom" constant="19.5" id="lrj-uL-Ind"/>
+                            <constraint firstItem="P4I-WA-soz" firstAttribute="width" secondItem="xLa-wp-tWN" secondAttribute="width" multiplier="0.35" id="ut3-sj-oF4"/>
+                            <constraint firstItem="P4I-WA-soz" firstAttribute="leading" secondItem="xLa-wp-tWN" secondAttribute="leading" constant="8" id="y4u-nb-afl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xLa-wp-tWN" secondAttribute="bottom" id="7Nm-dH-6qz"/>
+                    <constraint firstItem="xLa-wp-tWN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JeQ-MB-QUF"/>
+                    <constraint firstItem="xLa-wp-tWN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="n5e-kQ-uVu"/>
+                    <constraint firstAttribute="trailing" secondItem="xLa-wp-tWN" secondAttribute="trailing" constant="8" id="wAI-JJ-jbL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftLabel" destination="P4I-WA-soz" id="Mri-gk-JLJ"/>
+                <outlet property="rightLabel" destination="FkS-0M-rE6" id="lQa-TP-nZO"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+</document>
